@@ -1,6 +1,6 @@
 @font-face {
   font-family: Cereal Regular;
-  src: url(/assets/fonts/Cereal_Rg.ttf);
+  src: url(assets/fonts/Cereal_Rg.ttf);
 }
 
 @keyframes fadeIn {
