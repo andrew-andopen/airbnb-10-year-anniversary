@@ -162,7 +162,7 @@ footer {
 }
 
 .vp-test {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   left: 50%;
 }
