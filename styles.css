@@ -95,6 +95,7 @@ header {
   font-size: 1rem;
   text-decoration: underline;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 .address {
@@ -165,16 +166,19 @@ footer {
   }
 }
 
-.vp-test {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
+/*SIZE CHART*/
+
+.size-selector {
+  display: none;
 }
 
-/*SIZE CHART*/
+.show {
+  display: block;
+}
 
 .rtable {
   display: inline-block;
+  display: none;
   vertical-align: top;
   max-width: 100%;
 
@@ -184,37 +188,16 @@ footer {
 
   border-collapse: collapse;
   border-spacing: 0;
+
+  margin-top: 1rem;
 }
 
 .rtable,
 .rtable--flip tbody {
   -webkit-overflow-scrolling: touch;
-
-  background: radial-gradient(
-        left,
-        ellipse,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0) 75%
-      )
-      0 center,
-    radial-gradient(right, ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%)
-      100% center;
   background-size: 10px 100%, 10px 100%;
   background-attachment: scroll, scroll;
   background-repeat: no-repeat;
-}
-
-/* change these gradients from white to your background colour if it differs
- gradient on the first cells to hide the left shadow */
-.rtable td:first-child,
-.rtable--flip tbody tr:first-child {
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.096) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-repeat: no-repeat;
-  background-size: 20px 100%;
 }
 
 .rtable th {
@@ -225,7 +208,7 @@ footer {
 .rtable th,
 .rtable td {
   padding: 6px 12px;
-  border: 1px solid #00000009;
+  border: 1px solid #00000017;
 }
 
 .rtable--flip {
@@ -261,11 +244,9 @@ footer {
 
 .rtable--flip td {
   background-image: none !important;
-  // border-collapse is no longer active
   border-left: 0;
 }
 
-// border-collapse is no longer active
 .rtable--flip th:not(:last-child),
 .rtable--flip td:not(:last-child) {
   border-bottom: 0;

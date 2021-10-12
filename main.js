@@ -50,3 +50,9 @@ const Titles = document.querySelectorAll(".intro-animation");
 Titles.forEach((title, index) => {
   title.style.animation = `fadeIn 1s ${index / 2}s both`;
 });
+
+const sizeGuideButton = document.getElementById("size-button");
+const sizeSelector = document.querySelector(".size-selector");
+sizeGuideButton.addEventListener("click", () => {
+  sizeSelector.classList.toggle("show");
+});
