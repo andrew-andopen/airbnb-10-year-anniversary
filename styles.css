@@ -215,6 +215,13 @@ footer {
   background: var(--blue-light);
 }
 
+.scroll-indicator {
+  font-size: 12px;
+  margin-top: 8px;
+  margin-left: 146px;
+  display: none;
+}
+
 /*SIZE CHART*/
 
 @media (max-width: 1440px) {
@@ -229,6 +236,12 @@ footer {
   }
 }
 
+@media (max-width: 910px) {
+  .scroll-indicator {
+    display: block;
+  }
+}
+
 @media (max-width: 700px) {
   h1 {
     font-size: 8rem;
@@ -238,18 +251,6 @@ footer {
   p {
     font-size: 2rem;
   }
-
-  /* .rtable td:first-child,
-  .rtable--flip tbody tr:first-child {
-    background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.075) 50%,
-      rgba(0, 0, 0, 0) 100%
-    );
-    background-repeat: no-repeat;
-    background-size: 20px 100%;
-  } */
-}
 
 @media (max-width: 500px) {
   h1 {
