@@ -1,13 +1,24 @@
-const AnimatedTags = document.querySelectorAll(
-  "h1, h2, h3, p, .form-field, button, .ao-logo"
-);
+const AnimatedTags = document.querySelectorAll(".animate, .ao-logo");
+
+const Header = document.querySelector("header.fixed");
+
+const Hero = document.querySelector(".hero");
+
+const headerShow = () => {
+  const HeroBottom = Hero.getBoundingClientRect().bottom;
+  if (HeroBottom < 0) {
+    Header.classList.add("show");
+  } else {
+    Header.classList.remove("show");
+  }
+};
 
 AnimatedTags.forEach((tag) => {
   tag.style.opacity = 0;
 });
 
 const fadeIn = () => {
-  let delay = 0.15;
+  let delay = 0.3;
 
   AnimatedTags.forEach((tag, index) => {
     const tagTop = tag.getBoundingClientRect().top;
@@ -27,24 +38,15 @@ fadeIn();
 
 document.addEventListener("scroll", () => {
   fadeIn();
+  headerShow();
 });
 
 window.addEventListener("resize", () => {
   fadeIn();
 });
 
-const Header = document.querySelector("header.fixed");
-const Hero = document.querySelector(".hero");
+const Titles = document.querySelectorAll(".intro-animation");
 
-const headerShow = () => {
-  const HeroBottom = Hero.getBoundingClientRect().bottom;
-  if (HeroBottom < 0) {
-    Header.classList.add("show");
-  } else {
-    Header.classList.remove("show");
-  }
-};
-
-document.addEventListener("scroll", () => {
-  headerShow();
+Titles.forEach((title, index) => {
+  title.style.animation = `fadeIn 1s ${index / 2}s both`;
 });
