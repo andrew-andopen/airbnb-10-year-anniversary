@@ -239,7 +239,7 @@ footer {
     font-size: 2rem;
   }
 
-  .rtable td:first-child,
+  /* .rtable td:first-child,
   .rtable--flip tbody tr:first-child {
     background-image: linear-gradient(
       to right,
@@ -248,7 +248,7 @@ footer {
     );
     background-repeat: no-repeat;
     background-size: 20px 100%;
-  }
+  } */
 }
 
 @media (max-width: 500px) {
