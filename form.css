@@ -142,14 +142,16 @@ button:hover {
 
 @media only screen and (max-width: 1536px) {
   .form-field,
-  #address-two + label {
+  #address-two + label,
+  #email + label {
     font-size: calc(0.8vw + 1vh + 1vmin);
   }
 }
 
 @media only screen and (max-width: 540px) {
   .form-field,
-  #address-two + label {
+  #address-two + label,
+  #email + label {
     font-size: 24px;
   }
 
