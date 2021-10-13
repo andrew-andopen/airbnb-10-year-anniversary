@@ -34,6 +34,12 @@ h1 {
   line-height: 81.4%;
 }
 
+h1.success-title {
+  font-size: 5.25rem;
+  margin-bottom: 3.5rem;
+  margin-right: 3rem;
+}
+
 h1 span {
   opacity: 0;
 }
@@ -41,6 +47,11 @@ h1 span {
 h2 {
   font-size: 3.37rem;
   line-height: 1.2;
+}
+
+h2.success-subtitle {
+  font-size: 3.375rem;
+  margin-bottom: 14rem;
 }
 
 p {
@@ -72,7 +83,8 @@ header {
   transform: translateY(0);
 }
 
-.hero {
+.hero,
+.success {
   background: var(--blue);
   height: calc(100vh - 98px);
   display: flex;
@@ -224,6 +236,10 @@ footer {
 
 /*SIZE CHART*/
 
+.success-container {
+  max-width: 60rem;
+}
+
 @media (max-width: 1440px) {
   h1 {
     font-size: 12rem;
@@ -251,6 +267,7 @@ footer {
   p {
     font-size: 2rem;
   }
+}
 
 @media (max-width: 500px) {
   h1 {

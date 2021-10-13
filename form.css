@@ -110,6 +110,11 @@ button:hover {
   color: var(--white);
 }
 
+.t-size .form-field {
+  max-width: 50%;
+  margin-top: 3rem;
+}
+
 /* validate non required fields*/
 #address-two + label {
   top: 10px;
@@ -123,15 +128,16 @@ button:hover {
   font-size: 12px;
 }
 
-#email-form-field {
-  height: 0px;
-  width: 0px;
-  opacity: 0;
+#email + label {
+  top: 10px;
+  /*   margin: 10px 0 0 0; */
+  font-size: calc(0.2vw + 1vh + 1vmin);
 }
 
-.t-size .form-field {
-  max-width: 50%;
-  margin-top: 3rem;
+#email-label.valid-form {
+  top: -10px;
+  margin: 15px 0 0 0;
+  font-size: 12px;
 }
 
 @media only screen and (max-width: 1536px) {
