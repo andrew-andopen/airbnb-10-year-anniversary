@@ -34,7 +34,7 @@ h1 {
   line-height: 81.4%;
 }
 
-h1.success-title {
+.success-title {
   font-size: 5.25rem;
   margin-bottom: 3.5rem;
   margin-right: 3rem;
@@ -49,7 +49,7 @@ h2 {
   line-height: 1.2;
 }
 
-h2.success-subtitle {
+.success-subtitle {
   font-size: 3.375rem;
   margin-bottom: 14rem;
 }
@@ -89,6 +89,10 @@ header {
   height: calc(100vh - 98px);
   display: flex;
   align-items: center;
+}
+
+.success {
+  height: 100vh;
 }
 
 .sub {
@@ -256,6 +260,15 @@ footer {
   .scroll-indicator {
     display: block;
   }
+
+  .success-title {
+    font-size: 4rem;
+  }
+
+  .success-subtitle,
+  .success-contact {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 700px) {
@@ -267,6 +280,15 @@ footer {
   p {
     font-size: 2rem;
   }
+
+  .success-title {
+    font-size: 3rem;
+  }
+
+  .success-subtitle,
+  .success-contact {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -276,7 +298,8 @@ footer {
   }
 
   h2,
-  p {
+  p,
+  .success-contact {
     font-size: 1.5rem;
   }
 
@@ -286,5 +309,13 @@ footer {
 
   .padding {
     padding: 4rem 2rem;
+  }
+
+  .success {
+    align-items: flex-start;
+  }
+
+  .success-subtitle {
+    margin-bottom: 3rem;
   }
 }
