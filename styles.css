@@ -130,7 +130,8 @@ footer {
   margin-bottom: 2.4rem;
 }
 
-.contact span {
+.contact span,
+.success-contact span {
   text-decoration: underline;
 }
 

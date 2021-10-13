@@ -53,47 +53,51 @@ Titles.forEach((title, index) => {
 
 const sizeGuideButton = document.getElementById("size-button");
 const sizeSelector = document.querySelector(".size-selector");
-sizeGuideButton.addEventListener("click", () => {
-  sizeSelector.classList.toggle("show");
-});
+const index = document.getElementById("index");
 
-const addressTwoTag = document.getElementById("address-two");
-const addressTwoLabeltag = document.getElementById("address-two-label");
+if (index) {
+  sizeGuideButton.addEventListener("click", () => {
+    sizeSelector.classList.toggle("show");
+  });
 
-const emailTag = document.getElementById("email");
-const emailLabeltag = document.getElementById("email-label");
+  const addressTwoTag = document.getElementById("address-two");
+  const addressTwoLabeltag = document.getElementById("address-two-label");
 
-const checkValue = function (text, label) {
-  const value = text.value.trim();
-  if (value) {
-    label.classList.add("valid-form");
-  } else {
-    label.classList.remove("valid-form");
-  }
-};
+  const emailTag = document.getElementById("email");
+  const emailLabeltag = document.getElementById("email-label");
 
-addressTwoTag.addEventListener("focus", (evt) => {
-  addressTwoLabeltag.classList.add("valid-form");
-});
+  const checkValue = function (text, label) {
+    const value = text.value.trim();
+    if (value) {
+      label.classList.add("valid-form");
+    } else {
+      label.classList.remove("valid-form");
+    }
+  };
 
-addressTwoTag.addEventListener("blur", (evt) => {
-  addressTwoLabeltag.classList.remove("valid-form");
-  checkValue(addressTwoTag, addressTwoLabeltag);
-});
+  addressTwoTag.addEventListener("focus", (evt) => {
+    addressTwoLabeltag.classList.add("valid-form");
+  });
 
-addressTwoTag.addEventListener("input", (evt) => {
-  checkValue(addressTwoTag, addressTwoLabeltag);
-});
+  addressTwoTag.addEventListener("blur", (evt) => {
+    addressTwoLabeltag.classList.remove("valid-form");
+    checkValue(addressTwoTag, addressTwoLabeltag);
+  });
 
-emailTag.addEventListener("focus", (evt) => {
-  emailLabeltag.classList.add("valid-form");
-});
+  addressTwoTag.addEventListener("input", (evt) => {
+    checkValue(addressTwoTag, addressTwoLabeltag);
+  });
 
-emailTag.addEventListener("blur", (evt) => {
-  emailLabeltag.classList.remove("valid-form");
-  checkValue(emailTag, emailLabeltag);
-});
+  emailTag.addEventListener("focus", (evt) => {
+    emailLabeltag.classList.add("valid-form");
+  });
 
-emailTag.addEventListener("input", (evt) => {
-  checkValue(emailTag, emailLabeltag);
-});
+  emailTag.addEventListener("blur", (evt) => {
+    emailLabeltag.classList.remove("valid-form");
+    checkValue(emailTag, emailLabeltag);
+  });
+
+  emailTag.addEventListener("input", (evt) => {
+    checkValue(emailTag, emailLabeltag);
+  });
+}
