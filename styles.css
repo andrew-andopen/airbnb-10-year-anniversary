@@ -104,6 +104,10 @@ header {
   margin: 14rem 0 0rem 0;
 }
 
+.user-details {
+  padding-top: 0;
+}
+
 .t-title {
   max-width: 40rem;
   font-family: Cereal Bold;
