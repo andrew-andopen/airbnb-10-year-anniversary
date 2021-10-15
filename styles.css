@@ -3,6 +3,11 @@
   src: url(assets/fonts/Cereal_Rg.ttf);
 }
 
+@font-face {
+  font-family: Cereal Bold;
+  src: url(assets/fonts/Cereal_A_Bd.ttf);
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -96,15 +101,12 @@ header {
 }
 
 .sub {
-  margin: 14rem 0 14rem 0;
-}
-
-.user-details {
-  padding-top: 0;
+  margin: 14rem 0 0rem 0;
 }
 
 .t-title {
   max-width: 40rem;
+  font-family: Cereal Bold;
 }
 
 .t-sub {
@@ -116,6 +118,8 @@ header {
 
 .address {
   padding: 7rem 0 2rem 0;
+
+  font-family: Cereal Bold;
 }
 
 .address-sub {
