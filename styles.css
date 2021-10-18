@@ -113,7 +113,8 @@ header {
   font-family: Cereal Bold;
 }
 
-.t-sub {
+.t-sub,
+.measurement {
   font-size: 1rem;
   text-decoration: underline;
   margin-top: 1rem;
@@ -186,7 +187,6 @@ footer {
 
 .rtable th {
   text-align: left;
-  text-transform: uppercase;
 }
 
 .rtable th,
@@ -243,8 +243,30 @@ footer {
 .scroll-indicator {
   font-size: 12px;
   margin-top: 8px;
-  margin-left: 146px;
+  margin-left: 216px;
   display: none;
+}
+
+.guide {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.illustration {
+  width: 40%;
+  background-color: red;
+}
+
+.size-description {
+  margin-bottom: 2rem;
+}
+
+.description {
+  margin: 0 8rem 0 2rem;
+}
+
+.description p {
+  font-size: 1rem;
 }
 
 /*SIZE CHART*/
@@ -298,6 +320,14 @@ footer {
   .success-contact {
     font-size: 1.5rem;
   }
+
+  .illustration {
+    width: 50%;
+  }
+
+  .description {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 500px) {
@@ -326,5 +356,13 @@ footer {
 
   .success-subtitle {
     margin-bottom: 3rem;
+  }
+
+  .guide {
+    flex-direction: column;
+  }
+
+  .description {
+    margin-left: 0;
   }
 }
