@@ -362,6 +362,10 @@ footer {
     flex-direction: column;
   }
 
+  .illustration {
+    width: 80%;
+  }
+
   .description {
     margin-left: 0;
   }
